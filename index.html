@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <title>Frontend Mentor | Meet landing page</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body class="app">
+    <a class="visually-hidden-focusable skip-link" href="#main">Skip to content</a>
+
+    <header class="py-4 py-md-5">
+        <div class="container d-flex justify-content-center">
+            <img class="brand-logo" src="./assets/logo.svg" alt="Meet" />
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <!-- Desktop: left hero -->
+                    <div class="col-lg-4 d-none d-lg-flex justify-content-start">
+                        <img class="hero-img hero-img--left" src="./assets/image-hero-left.png" alt=""
+                            aria-hidden="true" />
+                    </div>
+
+                    <!-- Center content -->
+                    <div class="col-12 col-lg-4 text-center">
+                        <!-- Tablet: combined hero -->
+                        <div class="d-none d-md-block d-lg-none mb-4">
+                            <img class="hero-img hero-img--tablet mx-auto" src="./assets/image-hero.png" alt=""
+                                aria-hidden="true" />
+                        </div>
+
+                        <h1 id="hero-title" class="hero-title">
+                            Group Chat for Everyone
+                        </h1>
+
+                        <p class="hero-copy mx-auto">
+                            Meet makes it easy to connect with others face-to-face virtually and collaborate across any
+                            device.
+                        </p>
+
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                            <a class="btn btn-meet btn-meet--primary" href="#">
+                                Download <span class="btn-version">v1.3</span>
+                            </a>
+
+                            <a class="btn btn-meet btn-meet--secondary" href="#what-is-it">
+                                What is it?
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Desktop: right hero -->
+                    <div class="col-lg-4 d-none d-lg-flex justify-content-end">
+                        <img class="hero-img hero-img--right" src="./assets/image-hero-right.png" alt=""
+                            aria-hidden="true" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIVIDER 01 -->
+        <div class="section-divider" aria-hidden="true">
+            <span class="section-divider__line"></span>
+            <span class="section-divider__badge">01</span>
+        </div>
+
+        <!-- FEATURES -->
+        <section id="what-is-it" class="features py-4 py-md-5">
+            <div class="container">
+                <!-- 4-image grid -->
+                <div class="row g-3 g-md-4 justify-content-center">
+                    <div class="col-6 col-md-3">
+                        <img class="feature-img" src="./assets/image-woman-in-videocall.jpg" alt="Woman in a video call"
+                            loading="lazy" />
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <img class="feature-img" src="./assets/image-women-videochatting.jpg" alt="Women video chatting"
+                            loading="lazy" />
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <img class="feature-img" src="./assets/image-men-in-meeting.jpg" alt="Men in a meeting"
+                            loading="lazy" />
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <img class="feature-img" src="./assets/image-man-texting.jpg" alt="Man texting"
+                            loading="lazy" />
+                    </div>
+                </div>
+
+                <!-- Text block -->
+                <div class="text-center mt-5 mt-md-6">
+                    <p class="eyebrow">Built for modern use</p>
+
+                    <h2 class="section-title mx-auto">
+                        Smarter meetings, all in one place
+                    </h2>
+
+                    <p class="section-copy mx-auto">
+                        Send messages, share files, show your screen, and record your meetings — all in one workspace.
+                        Control who can join with invite-only team access, data encryption, and data export.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIVIDER 02 -->
+        <div class="section-divider section-divider--footer" aria-hidden="true">
+            <span class="section-divider__line"></span>
+            <span class="section-divider__badge">02</span>
+        </div>
+
+        <!-- FOOTER CTA -->
+        <footer class="cta" aria-labelledby="cta-title">
+            <div class="cta__bg" role="img" aria-label="People using Meet"></div>
+
+            <div class="container cta__content">
+                <div class="row align-items-center g-4 text-center text-lg-start">
+                    <div class="col-12 col-lg-4">
+                        <h2 id="cta-title" class="cta-title">
+                            Experience more together
+                        </h2>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <p class="cta-copy mb-0">
+                            Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-lg-end">
+                        <a class="btn btn-meet btn-meet--secondary btn-meet--on-dark" href="#">
+                            Download <span class="btn-version btn-version--on-dark">v1.3</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
